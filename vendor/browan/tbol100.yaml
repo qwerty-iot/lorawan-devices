@@ -1,0 +1,26 @@
+name: Object Locator
+description: The Browan Object Locator provides a convenient USB chargable telemetry device.
+
+hardwareVersions:
+  - version: '1.0'
+    numeric: 1
+
+firmwareVersions:
+  - # Firmware version
+    version: '1.0.1' # unknown
+    numeric: 1
+    hardwareVersions:
+      - '1.0'
+
+    profiles:
+      EU863-870:
+        id: tabs-profile
+        lorawanCertified: true
+        codec: tbol100-codec
+      US902-928:
+        id: tabs-profile
+        lorawanCertified: true
+        codec: tbol100-codec
+
+photos:
+  main: tbol100.png
