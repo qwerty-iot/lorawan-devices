@@ -1,4 +1,6 @@
 endDevices:
+  - tbol100
+  - tbit100
   - tbhh100
   - tbdw100
   - tbms100
