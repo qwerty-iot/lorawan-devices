@@ -1,0 +1,27 @@
+uplinkDecoder:
+  fileName: rak7200.js
+  examples:
+    - description: Data report
+      input:
+        fPort: 136
+        bytes: [0x12, 0xFB, 0x36, 0x0C, 0x62, 0x00]
+      output:
+        data:
+          humidity: 32.1
+          barometer: 1013.2
+          temperature: 21.1
+          latitude: 33.234
+          longitude: -117.876
+          altitude: 100.3
+          acceleration_x: 0.1
+          acceleration_y: 0.2
+          acceleration_z: 0.3
+          gasResistance: 0.4
+          battery: 3.2
+          gyroscope_x: 0.5
+          gyroscope_y: 0.6
+          gyroscope_z: 0.7
+          magnetometer_x: 0.8
+          magnetometer_y: 0.9
+          magnetometer_z: 1.0
+
