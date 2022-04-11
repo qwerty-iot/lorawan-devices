@@ -3,9 +3,8 @@
 //  - port contains the LoRaWAN fPort number
 //  - bytes is an array of bytes, e.g. [225, 230, 255, 0]
 // The function must return an object, e.g. {"temperature": 22.5}
-function Decoder(bytes, port) {
-  var decoded = {};
-  var hexString=bin2HexStr(bytes);
+function decodeUplink(input) {
+  var hexString=bin2HexStr(input.bytes);
   return rakSensorDataDecode(hexString);
 }
 
@@ -99,5 +98,5 @@ function rakSensorDataDecode(hexStr) {
     }
   }
 
-  return myObj;
+  return {data: myObj};
 }
