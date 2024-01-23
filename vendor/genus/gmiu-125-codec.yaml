@@ -1,0 +1,18 @@
+uplinkDecoder:
+  fileName: gmiu-125.js
+  examples:
+    - description: Data report
+      input:
+        fPort: 136
+        bytes: [0x12, 0xFB, 0x36, 0x0C, 0x62, 0x00]
+      output:
+        data:
+          buttonPressed: false
+          gnssFix: true
+          batteryVoltage: 3.6
+          batteryLevel: 100
+          temerature: 22
+          latitude: 33
+          longitude: -80
+          gnnsAccuracy: 100
+

@@ -276,6 +276,10 @@ vendors:
     name: Fujitsu Component Limited
     vendorID: 166
 
+  - id: genus
+    name: Genus
+    vendorID: 991
+
   - id: gwf
     name: GWF Messsysteme AG
     vendorID: 179
